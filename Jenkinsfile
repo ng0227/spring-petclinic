@@ -9,7 +9,7 @@ pipeline {
 
     stage('Sonar Qube') {
       steps {
-        sh '''./mvnw sonar:sonar -Dsonar.projectKey=petclinic_static_analysis -Dsonar.host.url=http://127.0.0.1:9090 -Dsonar.login= afa572edc406cad06b0a741d6283fb6b1df6467f
+        sh '''./mvnw sonar:sonar -Dsonar.projectKey=petclinic_static_analysis -Dsonar.host.url=http://127.0.0.1:9000 -Dsonar.login= afa572edc406cad06b0a741d6283fb6b1df6467f
 '''
       }
     }
